@@ -1,0 +1,28 @@
+{
+  "name": "arami-backend",
+  "version": "1.0.0",
+  "description": "**Arami** is a scalable and secure backend API built with **Express.js** and **TypeScript** to power an online marketplace for beauty products. The platform enables vendors to showcase their products, and buyers to browse, fund their wallet, and make purchases seamlessly.",
+  "homepage": "https://github.com/Ethan-net/arami-backend#readme",
+  "bugs": {
+    "url": "https://github.com/Ethan-net/arami-backend/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Ethan-net/arami-backend.git"
+  },
+  "license": "MIT",
+  "author": "Korede",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "express": "^5.1.0"
+  },
+  "devDependencies": {
+    "@types/express": "^5.0.1",
+    "nodemon": "^3.1.10",
+    "typescript": "^5.8.3"
+  }
+}

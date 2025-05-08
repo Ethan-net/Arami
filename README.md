@@ -1,42 +1,62 @@
-# 🌸 Arami - Body care Products Marketplace Backend
+# Arami Backend
 
-**Arami** is a scalable and secure backend API built with **Express.js** and **TypeScript** to power an online marketplace for beauty products. The platform enables vendors to showcase their products, and buyers to browse, fund their wallet, and make purchases seamlessly.
-
----
-
-## 🚀 Features
-
-### 👩‍💼 Vendor Features
-- Register and manage their store
-- Add, edit, and delete beauty products
-- View orders and sales history
-- Withdraw funds to external account
-
-### 🛍️ Buyer Features
-- Register and manage their profile
-- Browse beauty products by category or vendor
-- Fund their in-app wallet
-- Place and manage orders
-- Track purchase history
-
-### 🛠 Admin Features
-- Approve or suspend vendors
-- Monitor users and transactions
-- Remove or flag products
-- Platform analytics (future scope)
-
----
+Arami is a backend service for an online beauty marketplace platform built with **Express.js** and **TypeScript**. It supports a multi-vendor system where vendors can post products and buyers can purchase using a wallet system. It also features a **three-level admin system** for effective moderation and control.
 
 ## 🧰 Tech Stack
 
-- **Node.js** & **Express.js**
-- **TypeScript**
-- **MongoDB** or **PostgreSQL** (via Mongoose or Prisma)
-- **JWT Authentication + Cookies**
-- **Multer / Cloudinary** (for image uploads)
-- **Zod / Joi** for request validation
-- **Stripe / Paystack** (for payments)
+- Node.js
+- Express.js
+- TypeScript
+- MongoDB / PostgreSQL
+- JWT Authentication
+- Role-Based Access Control
+- Docker (optional)
 
----
+## 🧑‍💻 User Roles
 
-## 📁 Project Structure
+### 1. **Buyers**
+
+- Browse and purchase beauty products
+- Fund wallet
+- View transaction history
+
+### 2. **Vendors**
+
+- Create and manage products
+- View buyer orders
+- Receive payment after confirmation
+
+### 3. **Admins**
+
+#### 🟡 Low-Level Admin
+
+- Approve or suspend users and vendors
+- Monitor transactions and platform analytics
+- Flag or remove inappropriate products
+- Actions require approval from Mid or Senior Admin
+
+#### 🟠 Mid-Level Admin
+
+- All privileges of low-level admin
+- Approve low-level admin actions
+- Manage low-level admin accounts (create, suspend, delete)
+
+#### 🔴 Senior-Level Admin
+
+- Full system control
+- Manage Mid- and Low-Level Admins
+- Access complete platform analytics
+- Override and finalize all actions
+
+## 📂 Project Structure
+
+See the folder structure in this README above.
+
+## ⚙️ Getting Started
+
+### 1. Clone the Repository
+
+```bash
+git clone https://github.com/yourusername/arami-backend.git
+cd arami-backend
+```
