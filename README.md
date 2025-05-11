@@ -7,7 +7,7 @@ Arami is a backend service for an online beauty marketplace platform built with 
 - Node.js
 - Express.js
 - TypeScript
-- MongoDB / PostgreSQL
+- MongoDB
 - JWT Authentication
 - Role-Based Access Control
 - Docker (optional)
@@ -60,3 +60,64 @@ See the folder structure in this README above.
 git clone https://github.com/yourusername/arami-backend.git
 cd arami-backend
 ```
+
+# ✅ File Structure
+
+arami-backend/
+│
+├── src/
+│ ├── config/
+│ │ └── db.ts
+│ │ └── env.ts
+│
+│ ├── controllers/
+│ │ ├── auth.controller.ts
+│ │ ├── user.controller.ts
+│ │ ├── vendor.controller.ts
+│ │ ├── transaction.controller.ts
+│ │ └── admin/
+│ │ ├── lowLevel.controller.ts
+│ │ ├── midLevel.controller.ts
+│ │ └── seniorLevel.controller.ts
+│
+│ ├── middleware/
+│ │ ├── auth.middleware.ts
+│ │ ├── role.middleware.ts
+│ │ └── error.middleware.ts
+│
+│ ├── models/
+│ │ ├── user.model.ts
+│ │ ├── admin.model.ts
+│ │ ├── product.model.ts
+│ │ ├── transaction.model.ts
+│ │ └── wallet.model.ts
+│
+│ ├── routes/
+│ │ ├── auth.routes.ts
+│ │ ├── user.routes.ts
+│ │ ├── vendor.routes.ts
+│ │ ├── transaction.routes.ts
+│ │ └── admin/
+│ │ ├── low.routes.ts
+│ │ ├── mid.routes.ts
+│ │ └── senior.routes.ts
+│
+│ ├── services/
+│ │ ├── auth.service.ts
+│ │ ├── user.service.ts
+│ │ ├── admin.service.ts
+│ │ └── transaction.service.ts
+│
+│ ├── utils/
+│ │ ├── validators.ts
+│ │ ├── generateToken.ts
+│ │ └── logger.ts
+│
+│ ├── app.ts
+│ └── server.ts
+│
+├── .env
+├── .gitignore
+├── tsconfig.json
+├── package.json
+└── README.md
